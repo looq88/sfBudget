@@ -1,0 +1,4 @@
+services:
+#    budget_admin.example:
+#        class: Budget\AdminBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

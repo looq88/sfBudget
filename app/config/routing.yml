@@ -1,0 +1,16 @@
+budget_plan:
+    resource: "@BudgetPlanBundle/Resources/config/routing.yml"
+    prefix:   /
+
+budget_admin:
+    resource: "@BudgetAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+budget_user:
+    resource: "@BudgetUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+budget_layout:
+    resource: "@BudgetLayoutBundle/Resources/config/routing.yml"
+    prefix:   /
+
