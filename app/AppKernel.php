@@ -20,6 +20,11 @@ class AppKernel extends Kernel
             new Budget\UserBundle\BudgetUserBundle(),
             new Budget\AdminBundle\BudgetAdminBundle(),
             new Budget\PlanBundle\BudgetPlanBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
