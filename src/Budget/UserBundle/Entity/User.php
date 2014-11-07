@@ -24,6 +24,18 @@ class User extends BaseUser
     protected $id;
     
     /**
+     * @ORM\OneToMany(targetEntity="Budget\PlanBundle\Entity\Income", mappedBy="createdBy")
+     * @var ArrayCollection
+     */
+    private $incomes;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Budget\PlanBundle\Entity\Expense", mappedBy="createdBy")
+     * @var ArrayCollection
+     */
+    private $expenses;
+    
+    /**
      * Constructor
      */
     public function __construct()
