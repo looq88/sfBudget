@@ -1,0 +1,30 @@
+category_expense:
+    pattern:  /
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:index" }
+
+category_expense_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:show" }
+
+category_expense_new:
+    pattern:  /new
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:new" }
+
+category_expense_create:
+    pattern:  /create
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:create" }
+    requirements: { _method: post }
+
+category_expense_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:edit" }
+
+category_expense_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:update" }
+    requirements: { _method: post|put }
+
+category_expense_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BudgetPlanBundle:CategoryExpense:delete" }
+    requirements: { _method: post|delete }

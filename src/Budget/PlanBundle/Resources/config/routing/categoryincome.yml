@@ -1,0 +1,30 @@
+category_income:
+    pattern:  /
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:index" }
+
+category_income_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:show" }
+
+category_income_new:
+    pattern:  /new
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:new" }
+
+category_income_create:
+    pattern:  /create
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:create" }
+    requirements: { _method: post }
+
+category_income_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:edit" }
+
+category_income_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:update" }
+    requirements: { _method: post|put }
+
+category_income_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BudgetPlanBundle:CategoryIncome:delete" }
+    requirements: { _method: post|delete }

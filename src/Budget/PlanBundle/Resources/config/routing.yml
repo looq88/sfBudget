@@ -1,3 +1,12 @@
 budget_plan_homepage:
     path:     /hello/{name}
     defaults: { _controller: BudgetPlanBundle:Default:index }
+    
+budget_plan_bundle_category_expense:
+    resource: "@BudgetPlanBundle/Resources/config/routing/categoryexpense.yml"
+    prefix:   /category_expense
+
+budget_plan_bundle_category_income:
+    resource: "@BudgetPlanBundle/Resources/config/routing/categoryincome.yml"
+    prefix:   /category_income
+    
